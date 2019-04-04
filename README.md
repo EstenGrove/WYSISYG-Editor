@@ -3,8 +3,8 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
 
 
 ### __Todos__
-- Create Editor
-- ##### **Add functionality**:
+- **Create Editor**
+- ## **Add functionality**:
   - **Bold**
   - **Italic**
   - **Underline**
