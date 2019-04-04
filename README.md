@@ -24,6 +24,10 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
   - **Undo**
   - **Redo**
   - **Help button**
+  - **Copy button**
+    - Allow user to copy the HTML, Code, and Markdown they've written.
+  - **"HTML" Mode
+    - This will be the default. It will generate HTML markup for the user as they type
   - **"Code"** Mode
     - This allows the user to type in code and maintain code formatting
     - Enable syntax highlighting
