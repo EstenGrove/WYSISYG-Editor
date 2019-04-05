@@ -48,3 +48,7 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
   ##### **Tools & Resources**
 - Highlight.js: syntax highlighting
 - Firebase(real time database): for storage of pens
+- Markdown.js: for markdown parsing/conversion. May consider a custom Markdown parser.
+- Entypo+: for SVG sprites and icons
+- Express: as the back end.
+
