@@ -1,4 +1,4 @@
-# WYSISYG-Editor
+# WYSISYG-Editor(*Pen-It*)
 A functional WSYIWYG editor which can be implemented into sites or used as a stand-alone application.
 
 
@@ -46,3 +46,5 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
     - Converts to Markdown instead of HTML. HTML is the default Mode.
   
   ##### **Tools & Resources**
+- Highlight.js: syntax highlighting
+- Firebase(real time database): for storage of pens
