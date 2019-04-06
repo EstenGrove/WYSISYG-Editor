@@ -44,6 +44,7 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
         - Keywords: "this", fn name, return and other language specific keywords.
   - **"Markdown"** Mode
     - Converts to Markdown instead of HTML. HTML is the default Mode.
+- Dark/Light Theme Support
   
   ##### **Tools & Resources**
 - Highlight.js: syntax highlighting
