@@ -4,8 +4,8 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
 
 ## __Todos__
 -------------
-- **Create Editor**
-- ## **Add functionality**:
+- #### **Create Editor**
+- #### **Add functionality**:
   - **Bold**
   - **Italic**
   - **Underline**
@@ -45,9 +45,9 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
         - Keywords: "this", fn name, return and other language specific keywords.
   - **"Markdown"** Mode
     - Converts to Markdown instead of HTML. HTML is the default Mode.
-- Dark/Light Theme Support
+- #### Dark/Light Theme Support
   
-  ##### **Tools & Resources**
+  ### **Tools & Resources**
 - Highlight.js: syntax highlighting
 - Firebase(real time database): for storage of pens
 - Markdown.js: for markdown parsing/conversion. May consider a custom Markdown parser.
