@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +64,28 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Folder Structure
+
+|- App.js
+|- /components
+|-------|- EditorController.js
+|-------|- Toolbar.js
+|-------|- Editor.js
+|-------|- /toolbar
+|-------------|- Bold.js
+|-------------|- Italic.js
+|-------------|- Underline.js
+|-------------|- ChangeFont.js
+|-------------|- FontSize.js
+|-------------|- Capitalize.js
+|-------------|- FormatText.js
+|-------------|- AlignParagraph.js
+|-------------|- MakeNumList.js
+|-------------|- MakeBulletList.js
+|-------------|- CreateLink.js
+|-------------|- AddImage.js
+|-------------|- AddVideo.js
+|-------------|- MarkdownMode.js
+|-------------|- HTMLMode.js
+|-------------|- GetCode.js
