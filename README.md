@@ -9,9 +9,9 @@ A functional WSYIWYG editor which can be implemented into sites or used as a sta
   - **Bold**
   - **Italic**
   - **Underline**
-  - **Capitalize letters**
   - **Change font family**
   - **Change font size**
+  - **Change Font Color**
   - **Paragraph Format**
     - h1 to h6: called "Heading1" and "Heading2" etc.
     - Include option for code inside text
