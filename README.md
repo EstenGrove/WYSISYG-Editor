@@ -2,7 +2,8 @@
 A functional WSYIWYG editor which can be implemented into sites or used as a stand-alone application.
 
 
-### __Todos__
+## __Todos__
+-------------
 - **Create Editor**
 - ## **Add functionality**:
   - **Bold**
