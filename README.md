@@ -67,6 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Folder Structure
 
+```
 |- App.js
 |- /components
 |-------|- Toolbar.js
@@ -91,6 +92,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 |-------------|- MarkdownMode.js
 |-------------|- HTMLMode.js
 |-------------|- GetCode.js
+```
 
 **Markdown Libraries to consider:**
 
