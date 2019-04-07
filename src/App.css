@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
 }
 
-/* EditorController */
+/* ----------------------------- EditorController ----------------------------- */
 .editor-controller {
   max-width: 90vw;
   height: 80vh;
@@ -48,7 +48,7 @@ body {
 }
 
 
-/* Toolbar */
+/* ----------------------------- Toolbar ----------------------------- */
 .Toolbar {
   width: 90vw;
   height: 8rem;
@@ -66,6 +66,7 @@ body {
 
 }
 
+/* ----------------------------- Wrapper for each Button icon ----------------------------- */
 .tool-btn {
   width: 3rem;
   height: 3rem;
@@ -80,6 +81,7 @@ body {
   align-items: center;
 }
 
+/* ----------------------------- Icon ----------------------------- */
 .icon {
   width: 3rem;
   height: 3rem;
@@ -91,11 +93,11 @@ body {
   cursor: pointer;
 }
 
-.isOn {
+.isSelected {
   fill: #00B7FF;
 }
 
-/* Page Title and Toggle Wrapper */
+/* ----------------------------- Page Title & Toggle Wrapper ----------------------------- */
 .Title-Wrapper {
   width: 100%;
   display: -webkit-box;
@@ -103,6 +105,36 @@ body {
   display: flex;
 }
 
+
+
+/* -------------- Editor -------------- */
+.editor,
+.live-output {
+  width: calc(90vw - 2rem);
+  height: calc(50% - 3rem);
+  resize: none;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.editor:focus {
+  border-radius: .5rem;
+  outline: none;
+  -webkit-box-shadow: 2px 1px 4px 0px rgba(74, 216, 187, 1);
+  box-shadow: 2px 1px 4px 0px rgba(74, 216, 187, 1);
+}
+
+
+.live-output {
+  margin-top: 1rem;
+  outline: none;
+}
+
+/* --------------- Switch Toggle Button for Theme Change --------------- */
 .switchWrapper {
   height: 6rem;
   margin-left: auto;
@@ -118,27 +150,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
-/* -------------- Editor -------------- */
-.editor {
-  width: calc(90vw - 2rem);
-  height: calc(50% - 3rem);
-  resize: none;
-  border: none;
-  display: block;
-  margin: 0 auto;
-  border-radius: .5rem;
-  padding: 1rem 1rem;
-}
-
-.editor:focus {
-  border-radius: .5rem;
-  outline: none;
-  -webkit-box-shadow: 2px 1px 4px 0px rgba(74, 216, 187, 1);
-  box-shadow: 2px 1px 4px 0px rgba(74, 216, 187, 1);
-}
-
-/* Switch Toggle Button for Theme Change */
 
 .switch {
   position: relative;
@@ -195,7 +206,7 @@ input:checked+.slider:before {
 }
 
 
-
+/* --------------------------  Change Icon Size  ------------------------------------- */
 @media screen and (max-width: 440px) {
 
   .tool-btn,

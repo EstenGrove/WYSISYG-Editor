@@ -2,6 +2,7 @@ import React from "react";
 import Editor from "./Editor";
 import Toolbar from "./Toolbar";
 import ChangeTheme from "./ChangeTheme";
+import LiveOutput from "./LiveOutput";
 
 export default class EditorController extends React.Component {
   constructor(props) {
@@ -16,9 +17,19 @@ export default class EditorController extends React.Component {
       hasBulletList: false,
       hasNumberList: false,
       hasImage: false,
-      isLink: false
+      isLink: false,
+      isSelected: false,
+
+      textInput: "",
+      textOutput: ""
     };
   }
+  handleUserInput = e => {
+    this.setState({
+      textInput: e.target.value
+    });
+  };
+
   render() {
     return (
       <div className="editor-controller">
@@ -36,7 +47,11 @@ export default class EditorController extends React.Component {
           <ChangeTheme />
         </div>
         <Toolbar />
-        <Editor />
+        <Editor handleUserInput={this.handleUserInput} />
+        <h4 style={{ color: "#aaa", textDecoration: "underline" }}>
+          Live Preview
+        </h4>
+        <LiveOutput receiveUserInput={this.state.textInput} />
       </div>
     );
   }
