@@ -1,4 +1,206 @@
+// #5c75ea - bluish purple
+// #57d6c9 - vibrant turquoise OR
+// #4ad8bb - vibrant turquoise
+// #8a5cea - vibrant purple
+// #d842a3 - brightist pink
+// #e33540 - vibrant red
+// #ecc536 - vibrant yellow OR
+// #f1f576 - easter / vibrant yellow
+// #00B7FF - bright baby blue
+
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto';
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
 .App {
-  max-width: 100vw;
-  height: 100vh;
+  max-width: 90vw;
+  height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+/* EditorController */
+.editor-controller {
+  max-width: 90vw;
+  height: 80vh;
+  border: 1px solid #eaecef;
+  border-left: none;
+  border-right: none;
+}
+
+
+/* Toolbar */
+.Toolbar {
+  width: 90vw;
+  height: 8rem;
+  border: none;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+.tool-btn {
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #333;
+}
+
+.icon:hover {
+  fill: #00B7FF;
+  cursor: pointer;
+}
+
+.isOn {
+  fill: #00B7FF;
+}
+
+/* Page Title and Toggle Wrapper */
+.Title-Wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.switchWrapper {
+  height: 6rem;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* -------------- Editor -------------- */
+.editor {
+  width: calc(90vw - 2rem);
+  height: calc(50% - 3rem);
+  resize: none;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+}
+
+.editor:focus {
+  border-radius: .5rem;
+  outline: none;
+  -webkit-box-shadow: 2px 1px 4px 0px rgba(74, 216, 187, 1);
+  box-shadow: 2px 1px 4px 0px rgba(74, 216, 187, 1);
+}
+
+/* Switch Toggle Button for Theme Change */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 2rem;
+  background: #aaa;
+  border-radius: 25rem;
+
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  width: 1.4rem;
+  height: 1.4rem;
+  bottom: .3rem;
+  left: .4rem;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+input:checked+.slider {
+  background: #8a5cea;
+}
+
+input:focus+.slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196F3;
+  opacity: .7;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(1.8rem);
+  transform: translateX(1.8rem);
+}
+
+
+
+@media screen and (max-width: 440px) {
+
+  .tool-btn,
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }

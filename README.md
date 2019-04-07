@@ -69,9 +69,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 |- App.js
 |- /components
-|-------|- EditorController.js
 |-------|- Toolbar.js
 |-------|- Editor.js
+|-------|- EditorController.js
+|-------|-----|- LiveOutput.js (nested in EditorController.js)
+|-------|-----|- ChangeTheme.js (nested in EditorController.js)
 |-------|- /toolbar
 |-------------|- Bold.js
 |-------------|- Italic.js
@@ -80,7 +82,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 |-------------|- FontSize.js
 |-------------|- Capitalize.js
 |-------------|- FormatText.js
-|-------------|- AlignParagraph.js
+|-------------|- AlignParagraph.js --- (from Bold.js to GetCode.js, are nested in Toolbar.js)
 |-------------|- MakeNumList.js
 |-------------|- MakeBulletList.js
 |-------------|- CreateLink.js
@@ -89,3 +91,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 |-------------|- MarkdownMode.js
 |-------------|- HTMLMode.js
 |-------------|- GetCode.js
+
+**Markdown Libraries to consider:**
+
+- react-marked
+  - flexible options where there's no set options that are defined so you can set everything yourself as you like it. Used the .vue version before for a Vue application.
+- react-showdown
+  - more flexible option where you can create a preview component or not.
+- react-marked-markdown
+  - renders as it's own component for preview, which has some benefits, but ultimately is more opinionated in use.

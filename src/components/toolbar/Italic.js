@@ -7,6 +7,12 @@ import React from "react";
 
 export default class Italic extends React.Component {
   render() {
-    return;
+    return (
+      <div className="tool-btn">
+        <svg className="icon">
+          <use xlinkHref="./assets/sprite.svg#icon-format_italic" />
+        </svg>
+      </div>
+    );
   }
 }

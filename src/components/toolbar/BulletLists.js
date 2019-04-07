@@ -1,12 +1,11 @@
 import React from "react";
 
-export default class Bold extends React.Component {
+export default class Lists extends React.Component {
   render() {
-    const svg = "#align-center";
     return (
       <div className="tool-btn">
         <svg className="icon">
-          <use xlinkHref="./assets/sprite.svg#icon-format_bold" />
+          <use xlinkHref="./assets/sprite.svg#icon-format_list_bulleted" />
         </svg>
       </div>
     );
