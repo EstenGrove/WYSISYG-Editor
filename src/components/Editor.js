@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 export default class Editor extends React.Component {
   constructor(props) {
     super(props);
@@ -11,6 +12,7 @@ export default class Editor extends React.Component {
         className="editor"
         placeholder="Start typing..."
         onChange={this.props.handleUserInput}
+        defaultValue=""
       />
     );
   }

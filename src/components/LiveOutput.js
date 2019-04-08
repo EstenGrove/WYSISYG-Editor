@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 export default class LiveOutput extends React.Component {
   render() {
     return (
-      <textarea className="live-output" value={this.props.receiveUserInput}>
-        {" "}
-      </textarea>
+      <div
+        className="live-output"
+        dangerouslySetInnerHTML={{ __html: this.props.receiveUserInput }}
+      />
     );
   }
 }

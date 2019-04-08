@@ -3,6 +3,7 @@ import Editor from "./Editor";
 import Toolbar from "./Toolbar";
 import ChangeTheme from "./ChangeTheme";
 import LiveOutput from "./LiveOutput";
+// import Showdown from "../showdown/index.js";
 
 export default class EditorController extends React.Component {
   constructor(props) {
@@ -25,9 +26,17 @@ export default class EditorController extends React.Component {
     };
   }
   handleUserInput = e => {
+    const Showdown = require("showdown");
+    const Converter = new Showdown.Converter();
     this.setState({
       textInput: e.target.value
     });
+    const html = Converter.makeHtml(this.state.textInput);
+
+    this.setState({
+      textOutput: html
+    });
+    console.log(this.state.textOutput);
   };
 
   render() {
@@ -51,7 +60,7 @@ export default class EditorController extends React.Component {
         <h4 style={{ color: "#aaa", textDecoration: "underline" }}>
           Live Preview
         </h4>
-        <LiveOutput receiveUserInput={this.state.textInput} />
+        <LiveOutput receiveUserInput={this.state.textOutput} />
       </div>
     );
   }

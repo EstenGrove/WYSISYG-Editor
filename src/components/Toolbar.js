@@ -11,6 +11,7 @@ import ColorText from "./toolbar/ColorText";
 import Link from "./toolbar/Link";
 import Images from "./toolbar/Images";
 import FontSize from "./toolbar/FontSize";
+import GetCode from "./toolbar/GetCode";
 export default class Toolbar extends React.Component {
   render() {
     return (
@@ -27,6 +28,7 @@ export default class Toolbar extends React.Component {
         <AlignRight />
         <Link />
         <Images />
+        <GetCode />
       </div>
     );
   }
