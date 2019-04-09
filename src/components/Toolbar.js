@@ -12,11 +12,12 @@ import Link from "./toolbar/Link";
 import Images from "./toolbar/Images";
 import FontSize from "./toolbar/FontSize";
 import GetCode from "./toolbar/GetCode";
+import Delete from "./toolbar/Delete";
 export default class Toolbar extends React.Component {
   render() {
     return (
       <div className="Toolbar">
-        <Bold />
+        <Bold makeBold={this.props.makeBold} status={this.props.boldStatus} />
         <Italic />
         <Underline />
         <FontSize />
@@ -29,6 +30,7 @@ export default class Toolbar extends React.Component {
         <Link />
         <Images />
         <GetCode />
+        <Delete clearText={this.props.clearText} />
       </div>
     );
   }

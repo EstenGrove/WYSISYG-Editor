@@ -5,8 +5,8 @@ export default class GetCode extends React.Component {
     return (
       <div className="tool-btn">
         <svg className="icon">
-          <use xlinkHref="./assets/sprite.svg#icon-code" />
-        </svg>{" "}
+          <use xlinkHref="./assets/sprite2.svg#icon-html" />
+        </svg>
       </div>
     );
   }

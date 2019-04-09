@@ -81,6 +81,7 @@ body {
   align-items: center;
 }
 
+
 /* ----------------------------- Icon ----------------------------- */
 .icon {
   width: 3rem;
@@ -95,6 +96,20 @@ body {
 
 .isSelected {
   fill: #00B7FF;
+}
+
+.menu-btn {
+  height: 100%;
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+}
+
+.menu-btn .icon:hover {
+  fill: #57d6c9;
+}
+
+.trash:hover {
+  fill: #e33540;
 }
 
 /* ----------------------------- Page Title & Toggle Wrapper ----------------------------- */
@@ -180,6 +195,7 @@ body {
 .slider::before {
   position: absolute;
   content: '';
+  ;
   width: 1.4rem;
   height: 1.4rem;
   bottom: .3rem;
